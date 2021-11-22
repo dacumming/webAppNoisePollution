@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title%}Home Page{% endblock %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <blockquote class="blockquote text-center">
+      <h1 class="display-1 mb-4">What will you find here?</h1>
+      <p class="lead">This web application designed for visualizing environmenatl noise pollution of Pune,INDIA.</p>
+      <p class="lead">We invite you to have interaction with our provided tools.</p>
+    </blockquote>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card border-dark mb-3">
+    <img src="https://i.ibb.co/4W5ZP09/image3.png" class="card-img-top" alt="...">
+    <div class="card-body text-dark">
+      <h4 class="card-title">Noise pollution</h4>
+      <p class="card-text">The purpose of our project is to inform and to involve communities potentially affected by environmental noise pollution (ENP) by means of a web application for desktop.
+      Noise consider as a public health issue. Despite it's negative imapct on heman helath, it affects a wide range of terrestrial and aquatic species. 
+      </p>
+    </div>
+  </div>
+  <div class="card border-dark mb-3">
+    <img src="https://i.ibb.co/Lrb08rk/Picture1.jpg" class="card-img-top" alt="...">
+    <div class="card-body card-body text-dark">
+      <h4 class="card-title">Wanna be a contributor?!</h4>
+      <p class="card-text">
+      The most important part of our project was data, which acquired from Epicollect5.
+      The Epicollect5 provide this opportunity to any user become a collaborator in any project.
+      Even you can establish a project and invite others to involve. If you think you can be a collaborator
+      in our project <a href="http://127.0.0.1:8000/epicollect5">click</a> on the picture above.  
+      </p>
+    </div>
+  </div>
+  <div class="card border-dark mb-3">
+    <img src="https://i.ibb.co/GCqr0kx/image5.jpg" class="card-img-top" alt="...">
+    <div class="card-body card-body text-dark">
+      <h4 class="card-title">Pune,India</h4>
+      <p class="card-text">
+      The case study for this project is located in Pune,India. This city is situated in west of India and the eighth most populous city in India, with an estimated population of
+     about 7.2 million as of 2019.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row shadow-lg p-3 mb-1 bg-secondary rounded">
+    <div class="col-sm-8 p-1 mb-2 bg-info">
+      <h1 class="text-center bg-info text-light">Data point visualization</h1>
+      <p class="text p-2 mb-2 bg-info text-light">
+      With provided interactive map for measuring and visualizing environmental noise pollution, you would be able to visulize data points on an interactive map. 
+      For this porpose you can navigate to the maps section through the Navbar and, you will find a defualt map from Pune,India with visualized data points. If you 
+      put your cursor on each points, a window will appear which repreasent information regarding the specific point :
+      </p>
+      <ul>
+        <li class="text mb-1 bg-info text-light">Coordinate of a specific point (longitude, latitude)</li>
+        <li class="text mb-1 bg-info text-light">Record's date of the specific point on the Epicollect5</li>
+        <li class="text mb-1 bg-info text-light">Record's time of the specific point on the Epicollect5</li>
+        <li class="text mb-1 bg-info text-light">The landuse of specific point</li>
+        <li class="text mb-1 bg-info text-light">The measured environmental noise pollution of point (badesed on dB)</li>
+        <li class="text mb-1 bg-info text-light">Images from specific point that taken by Epicollect5 users</li>
+      </ul>  
+    </div>
+    <div class="col-sm-4 align-self-center p-5 mb-2 bg-secondary">
+      <p class="text-align-self-centerp-5 mb-1 bg-secondary">
+       <img src="https://i.ibb.co/jH4mfFf/0K9A4079.jpg" class="img-fluid" alt="map_with_visualized_data_points" loading="fast">
+      </p> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 p-1 mb-2 "></div>
+    <div class="col-sm-4 p-1 mb-2 "></div>
+  </div>
+  <div class="row shadow-lg p-3 mb-1 bg-secondary rounded">
+    <div class="col-sm-8 p-1 mb-2 bg-info">
+      <h1 class="text-center bg-info text-light">Map data with a custom visualization</h1>
+      <p class="text p-2 mb-2 bg-info text-light">
+      Since this application is an interactive interface and visulization of data in a sufficent way is quite important to us, we provide a Filter Manager tool in porpose of
+      personal customization. We incorporated the filter manager tool in the visualization option menu that you can access to it through the Maps section. with this ability you are 
+      capable of visualizing your desired area based on time, date and noise pollution range. Also with landuse classification you are able to visualize certain points based on their landuse.
+      </p> 
+      <p class="text p-1 mb-2 bg-info text-light">
+      Different style of the maps(heat maps, contour maps, dot maps, hot spot maps, etc) is available for professional users who want to go deep on environmental noise pollution 
+      data by professionally analyzing it in order to perform health studies, risk assessments or action plans that aim to reduce environmental noise pollution.  
+      </p>
+    </div>
+    <div class="col-sm-4 align-self-center p-5 mb-2 bg-secondary">
+      <p class="text-align-self-centerp-5 mb-1 bg-secondary">
+       <img src="https://i.ibb.co/6Y3Cbst/hexbins.jpg" class="img-fluid" alt="map_data_point" loading="fast">
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 p-1 mb-2 "></div>
+    <div class="col-sm-4 p-1 mb-2 "></div>
+  </div>
+  <div class="row shadow-lg p-3 mb-1 bg-secondary rounded">
+    <div class="col-sm-8 p-1 mb-2 bg-info">
+      <h1 class="text-center bg-info text-light">Data analysis of the noise pollution</h1>
+      <p class="text p-2 mb-2 bg-info text-light">
+      Analysis of the data release information for better interpretation. For this aim we consider an analytical tools which you would be able to 
+      apply different filter based on provided tools on our application. Since this as an interacitive tool it meant that you can choose which data to
+      visualize, for example filtering data by specific land use or record's time of the point. There is an opportunity to apply a saptial filter that
+      provides for your desiered subset area, general statistics. These tools are available in the mops section.  
+      </p> 
+    </div>
+    <div class="col-sm-4 align-self-center p-5 mb-2 bg-secondary">
+      <p class="text-align-self-centerp-5 mb-1 bg-secondary">
+       <img src="https://i.ibb.co/k4whVZB/Senzanome.png" class="img-fluid" alt="Hex_Bins_Map" loading="fast">
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

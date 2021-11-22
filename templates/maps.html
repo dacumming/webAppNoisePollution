@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title%}Web Application{% endblock %}
+{% block content %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Embed Demo</title>
+    {{ js_resources|indent(4)|safe }}
+    {{ css_resources|indent(4)|safe }}
+    {{ plot_script|indent(4)|safe }}
+  </head>
+  <body>
+  <table>
+  <thead>
+    <tr>
+      <th>{{ plot_div|indent(4)|safe }}</th>
+    </tr>
+  </thead>
+</table>
+    
+  </body>
+  <p></p>
+</html>
+{% endblock %}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title%}Web Application{% endblock %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Embedding a Bokeh Server</title>
+    {{ css_resources|indent(4)|safe }}
+</head>
+
+<body>
+  <div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>{{ script|indent(4)|safe }}</th>
+      </tr>
+    </thead>
+  </table>
+</body>
+</html>
+{% endblock %}
